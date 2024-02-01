@@ -8,6 +8,8 @@ function App() {
   const addValue = () => {
     if (counter < 20)
       setCounter(counter + 1)
+      // setCounter(prevCounter => prevCounter + 1)
+      // To add it multiple times, it has to work this way only since react's usState sends all the updates in ui/variables in batches.
   }
 
   const removeValue = () => {
